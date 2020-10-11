@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86AF61E525327D2A00CCE56A /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AF61E425327D2A00CCE56A /* Register.swift */; };
 		86C1FFC1252016990018B7A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1FFC0252016990018B7A2 /* AppDelegate.swift */; };
 		86C1FFC3252016990018B7A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1FFC2252016990018B7A2 /* SceneDelegate.swift */; };
 		86C1FFC5252016990018B7A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1FFC4252016990018B7A2 /* ViewController.swift */; };
 		86C1FFC8252016990018B7A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C1FFC6252016990018B7A2 /* Main.storyboard */; };
-		86C1FFCB252016990018B7A2 /* ProyectoIphoneIsil.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86C1FFC9252016990018B7A2 /* ProyectoIphoneIsil.xcdatamodeld */; };
 		86C1FFCD2520169A0018B7A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C1FFCC2520169A0018B7A2 /* Assets.xcassets */; };
 		86C1FFD02520169A0018B7A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C1FFCE2520169A0018B7A2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		86AF61E425327D2A00CCE56A /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		86C1FFBD252016990018B7A2 /* ProyectoIphoneIsil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoIphoneIsil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C1FFC0252016990018B7A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86C1FFC2252016990018B7A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		86C1FFC4252016990018B7A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		86C1FFC7252016990018B7A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		86C1FFCA252016990018B7A2 /* ProyectoIphoneIsil.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProyectoIphoneIsil.xcdatamodel; sourceTree = "<group>"; };
 		86C1FFCC2520169A0018B7A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86C1FFCF2520169A0018B7A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86C1FFD12520169A0018B7A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 				86C1FFCC2520169A0018B7A2 /* Assets.xcassets */,
 				86C1FFCE2520169A0018B7A2 /* LaunchScreen.storyboard */,
 				86C1FFD12520169A0018B7A2 /* Info.plist */,
-				86C1FFC9252016990018B7A2 /* ProyectoIphoneIsil.xcdatamodeld */,
+				86AF61E425327D2A00CCE56A /* Register.swift */,
 			);
 			path = ProyectoIphoneIsil;
 			sourceTree = "<group>";
@@ -140,9 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86C1FFCB252016990018B7A2 /* ProyectoIphoneIsil.xcdatamodeld in Sources */,
 				86C1FFC5252016990018B7A2 /* ViewController.swift in Sources */,
 				86C1FFC1252016990018B7A2 /* AppDelegate.swift in Sources */,
+				86AF61E525327D2A00CCE56A /* Register.swift in Sources */,
 				86C1FFC3252016990018B7A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,19 +343,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		86C1FFC9252016990018B7A2 /* ProyectoIphoneIsil.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				86C1FFCA252016990018B7A2 /* ProyectoIphoneIsil.xcdatamodel */,
-			);
-			currentVersion = 86C1FFCA252016990018B7A2 /* ProyectoIphoneIsil.xcdatamodel */;
-			path = ProyectoIphoneIsil.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 86C1FFB5252016990018B7A2 /* Project object */;
 }
