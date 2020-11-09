@@ -59,6 +59,9 @@
                                 <rect key="frame" x="0.0" y="745" width="414" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="REGISTER NOW"/>
+                                <connections>
+                                    <segue destination="E2p-Oh-nq2" kind="show" id="naY-b0-vUE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="forgot?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBz-5w-yGB">
                                 <rect key="frame" x="337" y="538.5" width="58" height="46"/>
@@ -159,7 +162,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxR-BP-NmL">
-                                <rect key="frame" x="144" y="736" width="126" height="46"/>
+                                <rect key="frame" x="144" y="687" width="126" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="REGISTER"/>
                             </button>
