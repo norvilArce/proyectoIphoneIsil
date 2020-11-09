@@ -14,6 +14,7 @@
 		86C1FFC8252016990018B7A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C1FFC6252016990018B7A2 /* Main.storyboard */; };
 		86C1FFCD2520169A0018B7A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C1FFCC2520169A0018B7A2 /* Assets.xcassets */; };
 		86C1FFD02520169A0018B7A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C1FFCE2520169A0018B7A2 /* LaunchScreen.storyboard */; };
+		E2965FB6469C84C114265A6C /* Pods_ProyectoIphoneIsil.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA83CA441FE41C2AA5DC784 /* Pods_ProyectoIphoneIsil.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		86C1FFCC2520169A0018B7A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86C1FFCF2520169A0018B7A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86C1FFD12520169A0018B7A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFDDC40FBAFA0D1DF4C03787 /* Pods-ProyectoIphoneIsil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoIphoneIsil.debug.xcconfig"; path = "Target Support Files/Pods-ProyectoIphoneIsil/Pods-ProyectoIphoneIsil.debug.xcconfig"; sourceTree = "<group>"; };
+		E72A000368DA607DBB8C7F4C /* Pods-ProyectoIphoneIsil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProyectoIphoneIsil.release.xcconfig"; path = "Target Support Files/Pods-ProyectoIphoneIsil/Pods-ProyectoIphoneIsil.release.xcconfig"; sourceTree = "<group>"; };
+		FBA83CA441FE41C2AA5DC784 /* Pods_ProyectoIphoneIsil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProyectoIphoneIsil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2965FB6469C84C114265A6C /* Pods_ProyectoIphoneIsil.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28DC485141821B5726518EA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBA83CA441FE41C2AA5DC784 /* Pods_ProyectoIphoneIsil.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832B0E62321658CDD59D3E6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFDDC40FBAFA0D1DF4C03787 /* Pods-ProyectoIphoneIsil.debug.xcconfig */,
+				E72A000368DA607DBB8C7F4C /* Pods-ProyectoIphoneIsil.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		86C1FFB4252016990018B7A2 = {
 			isa = PBXGroup;
 			children = (
 				86C1FFBF252016990018B7A2 /* ProyectoIphoneIsil */,
 				86C1FFBE252016990018B7A2 /* Products */,
+				832B0E62321658CDD59D3E6E /* Pods */,
+				28DC485141821B5726518EA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86C1FFD42520169A0018B7A2 /* Build configuration list for PBXNativeTarget "ProyectoIphoneIsil" */;
 			buildPhases = (
+				65A0F3FA03E8BF2A4FB8A3B0 /* [CP] Check Pods Manifest.lock */,
 				86C1FFB9252016990018B7A2 /* Sources */,
 				86C1FFBA252016990018B7A2 /* Frameworks */,
 				86C1FFBB252016990018B7A2 /* Resources */,
+				7617203BCC5E4A6B8B82E961 /* [CP] Embed Pods Frameworks */,
+				CB84F6E6E8BD8A2763699C56 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +162,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65A0F3FA03E8BF2A4FB8A3B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProyectoIphoneIsil-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7617203BCC5E4A6B8B82E961 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProyectoIphoneIsil/Pods-ProyectoIphoneIsil-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProyectoIphoneIsil/Pods-ProyectoIphoneIsil-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProyectoIphoneIsil/Pods-ProyectoIphoneIsil-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB84F6E6E8BD8A2763699C56 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProyectoIphoneIsil/Pods-ProyectoIphoneIsil-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProyectoIphoneIsil/Pods-ProyectoIphoneIsil-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProyectoIphoneIsil/Pods-ProyectoIphoneIsil-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		86C1FFB9252016990018B7A2 /* Sources */ = {
@@ -287,6 +374,7 @@
 		};
 		86C1FFD52520169A0018B7A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFDDC40FBAFA0D1DF4C03787 /* Pods-ProyectoIphoneIsil.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -305,6 +393,7 @@
 		};
 		86C1FFD62520169A0018B7A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E72A000368DA607DBB8C7F4C /* Pods-ProyectoIphoneIsil.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
