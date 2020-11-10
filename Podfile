@@ -4,9 +4,7 @@
 target 'ProyectoIphoneIsil' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
-  pod 'GoogleMaps'
-  pod 'YouTubePlayer-Swift'
-  pod 'Firebase'
-
+  
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Auth'
 end

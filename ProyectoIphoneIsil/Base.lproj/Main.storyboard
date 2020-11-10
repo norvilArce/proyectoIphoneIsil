@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Auth View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="Login" id="BYZ-38-t0r" customClass="ViewController" customModule="ProyectoIphoneIsil" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginUIVC" id="BYZ-38-t0r" customClass="AuthViewController" customModule="ProyectoIphoneIsil" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +28,7 @@
                                     <constraint firstAttribute="height" constant="46" id="M09-Pk-Ifj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="sR2-Ac-bJe">
                                 <rect key="frame" x="20" y="483" width="301.5" height="45.5"/>
@@ -54,13 +54,16 @@
                                     <color key="titleColor" systemColor="systemBlueColor"/>
                                     <color key="titleShadowColor" systemColor="opaqueSeparatorColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8wV-0k-ENe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="peH-2M-za8">
                                 <rect key="frame" x="0.0" y="745" width="414" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="REGISTER NOW"/>
                                 <connections>
-                                    <segue destination="E2p-Oh-nq2" kind="show" id="naY-b0-vUE"/>
+                                    <segue destination="E2p-Oh-nq2" kind="show" id="ZvL-NV-eOJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="forgot?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBz-5w-yGB">
@@ -122,15 +125,23 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="lhH-NC-a2r"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="sR2-Ac-bJe" id="Ak5-Xe-ODj"/>
+                        <outlet property="forgotLabel" destination="WBz-5w-yGB" id="luL-dB-7t8"/>
+                        <outlet property="loginButton" destination="2cE-zV-XuL" id="dwS-yb-Zp5"/>
+                        <outlet property="passwordTextField" destination="N1L-hc-GBB" id="hKE-iz-qv3"/>
+                        <outlet property="registerButton" destination="peH-2M-za8" id="0QH-8r-knY"/>
+                        <outlet property="rememberSwitch" destination="EFE-0m-hbN" id="ghB-EO-8Qe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="404" y="42"/>
         </scene>
-        <!--Register-->
+        <!--Register View Controller-->
         <scene sceneID="OFa-gu-tQy">
             <objects>
-                <viewController storyboardIdentifier="VCRegister" id="E2p-Oh-nq2" customClass="Register" customModule="ProyectoIphoneIsil" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VCRegister" id="E2p-Oh-nq2" customClass="RegisterViewController" customModule="ProyectoIphoneIsil" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="brC-Bb-ycf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,25 +165,28 @@
                             <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electronico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ioi-PY-XDD">
                                 <rect key="frame" x="30" y="256" width="354" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bxX-rT-iRU">
-                                <rect key="frame" x="30" y="323" width="354" height="37"/>
+                                <rect key="frame" x="30" y="323" width="354" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxR-BP-NmL">
                                 <rect key="frame" x="144" y="687" width="126" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="REGISTER"/>
+                                <connections>
+                                    <action selector="registerButtonAction:" destination="E2p-Oh-nq2" eventType="touchUpInside" id="1Wb-eZ-J80"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Carrera" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yl6-d6-QaC">
-                                <rect key="frame" x="30" y="390" width="354" height="37"/>
+                                <rect key="frame" x="30" y="389" width="354" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sede" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v7t-TI-umB">
-                                <rect key="frame" x="30" y="457" width="354" height="37"/>
+                                <rect key="frame" x="30" y="456" width="354" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -209,20 +223,29 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CWO-g5-2Uf"/>
+                    <connections>
+                        <outlet property="apellidoTextField" destination="T4f-mo-z7L" id="PJB-Ir-AXx"/>
+                        <outlet property="carreraTextField" destination="yl6-d6-QaC" id="SND-JI-o65"/>
+                        <outlet property="emailTextField" destination="Ioi-PY-XDD" id="euV-C6-yQH"/>
+                        <outlet property="nombreTextField" destination="GQT-E9-DCR" id="CN7-8d-h8Q"/>
+                        <outlet property="passwordTextField" destination="bxX-rT-iRU" id="TTu-zi-mKe"/>
+                        <outlet property="registerButton" destination="lxR-BP-NmL" id="1BQ-RP-FI3"/>
+                        <outlet property="sedeTextField" destination="v7t-TI-umB" id="TJ1-fb-3tb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o41-cG-5nE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1355" y="-371"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="G0O-Bw-Dor">
             <objects>
-                <viewController id="38E-Ck-ANe" sceneMemberID="viewController">
+                <viewController id="38E-Ck-ANe" customClass="HomeViewController" customModule="ProyectoIphoneIsil" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bb9-TE-Q62">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="mxm-SL-gXt">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="mxm-SL-gXt">
                                 <rect key="frame" x="0.0" y="822" width="414" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="BPx-ZB-C9y"/>
@@ -356,6 +379,7 @@
                             <constraint firstItem="06d-gz-WAP" firstAttribute="trailing" secondItem="UTH-o6-MGz" secondAttribute="trailing" constant="20" id="x18-nN-Ct7"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="dwc-7o-yPr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="if3-LV-wXp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -379,7 +403,7 @@
                                             <constraint firstAttribute="height" id="U1P-HZ-uji"/>
                                         </constraints>
                                     </view>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="t2d-WH-8ck">
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="t2d-WH-8ck">
                                         <rect key="frame" x="0.0" y="769" width="414" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="d5U-j2-lFb"/>
@@ -591,7 +615,7 @@
                                             <constraint firstAttribute="height" id="JAi-IM-bic"/>
                                         </constraints>
                                     </view>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="VJL-bV-AIV">
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="2" translatesAutoresizingMaskIntoConstraints="NO" id="VJL-bV-AIV">
                                         <rect key="frame" x="0.0" y="761" width="414" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="sW7-Bj-SRZ"/>

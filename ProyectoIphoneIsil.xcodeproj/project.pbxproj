@@ -3,14 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		86AF61E525327D2A00CCE56A /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AF61E425327D2A00CCE56A /* Register.swift */; };
+		49770500255A712A006BDBFD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497704FF255A712A006BDBFD /* HomeViewController.swift */; };
+		49770513255A8E48006BDBFD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49770512255A8E48006BDBFD /* GoogleService-Info.plist */; };
+		86AF61E525327D2A00CCE56A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AF61E425327D2A00CCE56A /* RegisterViewController.swift */; };
 		86C1FFC1252016990018B7A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1FFC0252016990018B7A2 /* AppDelegate.swift */; };
 		86C1FFC3252016990018B7A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1FFC2252016990018B7A2 /* SceneDelegate.swift */; };
-		86C1FFC5252016990018B7A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1FFC4252016990018B7A2 /* ViewController.swift */; };
+		86C1FFC5252016990018B7A2 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1FFC4252016990018B7A2 /* AuthViewController.swift */; };
 		86C1FFC8252016990018B7A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C1FFC6252016990018B7A2 /* Main.storyboard */; };
 		86C1FFCD2520169A0018B7A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C1FFCC2520169A0018B7A2 /* Assets.xcassets */; };
 		86C1FFD02520169A0018B7A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C1FFCE2520169A0018B7A2 /* LaunchScreen.storyboard */; };
@@ -18,11 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		86AF61E425327D2A00CCE56A /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		497704FF255A712A006BDBFD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		49770512255A8E48006BDBFD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		86AF61E425327D2A00CCE56A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		86C1FFBD252016990018B7A2 /* ProyectoIphoneIsil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoIphoneIsil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C1FFC0252016990018B7A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86C1FFC2252016990018B7A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		86C1FFC4252016990018B7A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		86C1FFC4252016990018B7A2 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		86C1FFC7252016990018B7A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86C1FFCC2520169A0018B7A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86C1FFCF2520169A0018B7A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,7 +62,6 @@
 				CFDDC40FBAFA0D1DF4C03787 /* Pods-ProyectoIphoneIsil.debug.xcconfig */,
 				E72A000368DA607DBB8C7F4C /* Pods-ProyectoIphoneIsil.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,12 +88,14 @@
 			children = (
 				86C1FFC0252016990018B7A2 /* AppDelegate.swift */,
 				86C1FFC2252016990018B7A2 /* SceneDelegate.swift */,
-				86C1FFC4252016990018B7A2 /* ViewController.swift */,
+				86C1FFC4252016990018B7A2 /* AuthViewController.swift */,
 				86C1FFC6252016990018B7A2 /* Main.storyboard */,
 				86C1FFCC2520169A0018B7A2 /* Assets.xcassets */,
 				86C1FFCE2520169A0018B7A2 /* LaunchScreen.storyboard */,
 				86C1FFD12520169A0018B7A2 /* Info.plist */,
-				86AF61E425327D2A00CCE56A /* Register.swift */,
+				49770512255A8E48006BDBFD /* GoogleService-Info.plist */,
+				86AF61E425327D2A00CCE56A /* RegisterViewController.swift */,
+				497704FF255A712A006BDBFD /* HomeViewController.swift */,
 			);
 			path = ProyectoIphoneIsil;
 			sourceTree = "<group>";
@@ -107,7 +112,6 @@
 				86C1FFBA252016990018B7A2 /* Frameworks */,
 				86C1FFBB252016990018B7A2 /* Resources */,
 				7617203BCC5E4A6B8B82E961 /* [CP] Embed Pods Frameworks */,
-				CB84F6E6E8BD8A2763699C56 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86C1FFD02520169A0018B7A2 /* LaunchScreen.storyboard in Resources */,
+				49770513255A8E48006BDBFD /* GoogleService-Info.plist in Resources */,
 				86C1FFCD2520169A0018B7A2 /* Assets.xcassets in Resources */,
 				86C1FFC8252016990018B7A2 /* Main.storyboard in Resources */,
 			);
@@ -203,23 +208,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProyectoIphoneIsil/Pods-ProyectoIphoneIsil-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CB84F6E6E8BD8A2763699C56 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ProyectoIphoneIsil/Pods-ProyectoIphoneIsil-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ProyectoIphoneIsil/Pods-ProyectoIphoneIsil-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProyectoIphoneIsil/Pods-ProyectoIphoneIsil-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -227,9 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86C1FFC5252016990018B7A2 /* ViewController.swift in Sources */,
+				49770500255A712A006BDBFD /* HomeViewController.swift in Sources */,
+				86C1FFC5252016990018B7A2 /* AuthViewController.swift in Sources */,
 				86C1FFC1252016990018B7A2 /* AppDelegate.swift in Sources */,
-				86AF61E525327D2A00CCE56A /* Register.swift in Sources */,
+				86AF61E525327D2A00CCE56A /* RegisterViewController.swift in Sources */,
 				86C1FFC3252016990018B7A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
